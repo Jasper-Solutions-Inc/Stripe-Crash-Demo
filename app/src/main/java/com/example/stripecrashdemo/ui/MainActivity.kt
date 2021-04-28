@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.example.stripecrashdemo.MyApplication.Companion.STRIPE_PUBLISHABLE_KEY
 import com.example.stripecrashdemo.data.UserPrefs
-import com.example.stripecrashdemo.data.model.FlmEphemeralKeyProvider
+import com.example.stripecrashdemo.data.model.MyEphemeralKeyProvider
 import com.example.stripecrashdemo.data.model.PaymentIntentCreateRequest
 import com.example.stripecrashdemo.data.network.CallCheckoutService
 import com.example.stripecrashdemo.databinding.ActivityMainBinding
@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity(), PaymentSession.PaymentSessionListener,
     retrofit.create(CallCheckoutService::class.java)
   }
   private val stripe by lazy { Stripe(this, STRIPE_PUBLISHABLE_KEY) }
-  private val ephemeralKeyProvider: FlmEphemeralKeyProvider by lazy {
-    FlmEphemeralKeyProvider(lifecycleScope, service, userPrefs)
+  private val ephemeralKeyProvider: MyEphemeralKeyProvider by lazy {
+    MyEphemeralKeyProvider(lifecycleScope, service, userPrefs)
   }
   private val paymentSessionConfig
     get() = PaymentSessionConfig.Builder()

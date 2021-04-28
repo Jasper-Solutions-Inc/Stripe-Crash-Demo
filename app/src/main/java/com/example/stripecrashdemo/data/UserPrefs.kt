@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.util.Log
 import androidx.core.content.edit
-import com.example.stripecrashdemo.data.model.FlmUser
+import com.example.stripecrashdemo.data.model.MyUser
 import com.google.gson.Gson
 
 /**
@@ -26,7 +26,7 @@ class UserPrefs (private val gson: Gson, context: Context) {
     else remove(prefName)
   }
 
-  var user: FlmUser?
-    get() = getPrefValue("PREF_USER", FlmUser::class.java)
+  var user: MyUser?
+    get() = getPrefValue("PREF_USER", MyUser::class.java)
     set(value) = setPrefValue("PREF_USER", value)
 }

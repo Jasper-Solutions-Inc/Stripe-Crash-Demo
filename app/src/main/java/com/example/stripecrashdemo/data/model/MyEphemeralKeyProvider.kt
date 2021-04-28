@@ -13,7 +13,7 @@ import kotlinx.coroutines.withContext
 /**
  * Prem Suman's creation on 4/19/2021
  */
-class FlmEphemeralKeyProvider(
+class MyEphemeralKeyProvider(
   private val scope: CoroutineScope, private val callCheckoutService: CallCheckoutService, private val userPrefs: UserPrefs
 ) : EphemeralKeyProvider {
 

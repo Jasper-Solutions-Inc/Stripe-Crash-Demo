@@ -7,7 +7,7 @@ import kotlinx.parcelize.Parcelize
 /**
  * Prem's creation, on 10/12/20
  */
-@Parcelize data class FlmUser(
+@Parcelize data class MyUser(
 
   @SerializedName("id") var id: String = "",
 
@@ -17,5 +17,5 @@ import kotlinx.parcelize.Parcelize
 
   @SerializedName("email") val email: String = "",
 
-  @SerializedName("customer") val customer: FlmCustomer? = null,
+  @SerializedName("customer") val customer: MyCustomer? = null,
 ) : Parcelable

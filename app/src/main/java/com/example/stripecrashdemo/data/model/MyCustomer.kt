@@ -8,7 +8,7 @@ import java.util.*
 /**
  * Prem Suman's creation on 4/20/2021
  */
-@Parcelize data class FlmCustomer(
+@Parcelize data class MyCustomer(
 
   @SerializedName("id") var id: String = "",
 
