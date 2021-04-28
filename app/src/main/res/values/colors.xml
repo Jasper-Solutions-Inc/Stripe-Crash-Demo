@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#1CAF8C</color>
+  <color name="colorPrimaryAdaptive">#1CAF8C</color>
+  <color name="colorPrimaryVariant">#148C70</color>
+  <color name="colorPrimaryVariantOrBlack">#148C70</color>
+  <color name="colorPrimaryText">#1CAF8C</color>
+  <color name="colorSecondary">#03396D</color>
+  <color name="colorSecondaryAdaptive">#03396D</color>
+  <color name="colorSecondaryDark">#002445</color>
+  <color name="colorSecondaryVariant">#7D99B3</color>
+  <color name="colorSecondaryText">#03396D</color>
+  <color name="colorOnSecondary">#9CDEFF</color>
+  <color name="black">#FF000000</color>
+  <color name="white">#FFFFFFFF</color>
+  <color name="colorBg">#FFFFFF</color>
+  <color name="color_bg_translucent_adaptive">#B3FFFFFF</color>
+  <color name="transparent">#00000000</color>
+  <color name="color_translucent_80">#80000000</color>
+  <color name="color_translucent_40">#40000000</color>
+  <color name="color_33ffffff">#33FFFFFF</color>
+  <color name="color_f8f8f8">#f8f8f8</color>
+  <color name="color_e5e5e5">#e5e5e5</color>
+  <color name="color_eeeeee">#eeeeee</color>
+  <color name="color_d6d6d6">#D6D6D6</color>
+  <color name="color_454a4d">#454a4d</color>
+  <color name="color_333333">#333333</color>
+  <color name="color_444444">#444444</color>
+  <color name="color_666666">#666666</color>
+  <color name="color_999999">#999999</color>
+  <color name="color_dddddd">#DDDDDD</color>
+  <color name="color_ed1b36">#ed1b36</color>
+  <color name="color_009fd0">#009fd0</color>
+  <color name="color_2bbc51">#2bbc51</color>
+  <color name="color_d8d8d8">#D8D8D8</color>
+  <color name="color_333300">#333300</color>
+  <color name="color_02c94b">#02c94b</color>
+  <color name="color_50e3c2">#50e3c2</color>
+  <color name="color_e36650">#e36650</color>
+  <color name="color_abb4be">#abb4be</color>
+  <color name="color_7de0dfe6">#7de0dfe6</color>
+  <color name="color_e0dfe6">#e0dfe6</color>
+  <color name="color_light_black_dark_white">#000000</color>
+  <color name="color_light_grey_dark_grey">#666666</color>
+  <color name="color_white_adaptive">#FFFFFF</color>
+  <color name="color_333333_adaptive">#333333</color>
+  <color name="color_999999_adaptive">#999999</color>
+  <color name="color_80333333">#80333333</color>
+  <color name="color_ripple_on_surface">#0F000000</color>
+
+  <!-- Map picker colors -->
+  <color name="leku_blackish">#171d20</color>
+  <color name="leku_mid_grey">#85969f</color>
+  <color name="leku_search_background">#0000</color>
+  <color name="leku_white_alpha">#F2FFFFFF</color>
+  <color name="leku_strong_grey">#50545A</color>
+</resources>

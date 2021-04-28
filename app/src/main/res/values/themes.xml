@@ -1,0 +1,91 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!-- Base application theme. -->
+  <style name="StripeCrashDemo" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/colorSecondary</item>
+    <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+    <item name="colorOnSecondary">@color/colorOnSecondary</item>
+    <!-- Status bar color. -->
+    <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    <!-- Customize your theme here. -->
+    <item name="windowActionBar">false</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:textColorPrimary">@color/color_333333</item>
+    <item name="android:textColorSecondary">@color/color_666666</item>
+    <item name="android:textColorTertiary">@color/color_999999</item>
+
+    <item name="colorSurface">@color/white</item>
+    <item name="android:colorBackground">@color/white</item>
+    <item name="colorOnBackground">@color/color_333333</item>
+    <item name="colorError">@color/color_e36650</item>
+    <item name="colorOnError">@color/white</item>
+    <item name="colorOnSurface">@color/black</item>
+    <item name="scrimBackground">@color/mtrl_scrim_color</item>
+  </style>
+
+  <!--region Removing styles in this region will cause crash in line #13 in payment_methods_activity.xml-->
+  <!--Since the toolbar style can be customised via "StripeToolBarStyle"-->
+  <!--The LinearProgressIndicator's style is not customisable like this in payment_methods_activity.xml-->
+  <style name="StripeToolBarStyle" parent="StripeCrashDemo">
+    <item name="colorControlNormal">?attr/titleTextColor</item>
+    <item name="actionMenuTextColor">?attr/titleTextColor</item>
+    <item name="android:actionButtonStyle">@style/StripeActionButtonStyle</item>
+  </style>
+
+  <style name="StripeActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+    <item name="android:paddingStart">16dp</item>
+    <item name="android:paddingEnd">16dp</item>
+  </style>
+
+  <style name="StripeBaseTheme" parent="StripeCrashDemo">
+    <item name="colorAccent">@color/stripe_accent_color_default</item>
+    <item name="colorControlNormal">@color/stripe_control_normal_color_default</item>
+    <item name="colorPrimary">@color/stripe_toolbar_color_default</item>
+    <item name="colorPrimaryDark">@color/stripe_toolbar_color_default_dark</item>
+    <item name="titleTextColor">@color/stripe_title_text_color</item>
+    <item name="android:textColorSecondary">@color/stripe_text_color_secondary</item>
+  </style>
+  <!--endregion-->
+
+  <style name="StripeDefaultTheme" parent="StripeBaseTheme">
+    <!-- Applied to toolbar background -->
+    <item name="colorPrimary">?attr/colorPrimary</item>
+
+    <!-- Applied to status bar -->
+    <item name="colorPrimaryDark">?attr/colorPrimaryDark</item>
+
+    <!-- Applied to inactive Shipping Method name and amount -->
+    <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
+
+    <!-- Applied to inactive Shipping Method description -->
+    <item name="android:textColorSecondary">?attr/colorSecondary</item>
+
+    <!--
+        Applied to Shipping Information drop-down items;
+        add Payment Method footer text color
+    -->
+    <item name="android:textColor">?attr/colorOnPrimary</item>
+
+    <!-- Applied to toolbar foreground/text -->
+    <item name="titleTextColor">?attr/colorOnPrimary</item>
+
+    <!--
+        Applied to selected Payment Method; active field; links;
+        add new Payment Method call-to-action
+    -->
+    <item name="colorAccent">?attr/colorSecondary</item>
+
+    <!-- Applied to: Payment Method icon; inactive form field highlight -->
+    <item name="colorControlNormal">?attr/colorControlNormal</item>
+
+    <!-- Applied to form field text -->
+    <!--    <item name="android:editTextColor">@color/textPrimary</item>-->
+
+    <!--    <item name="editTextColor">@color/textPrimary</item>-->
+  </style>
+</resources>
